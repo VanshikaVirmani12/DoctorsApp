@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cscb07project_patientappointmentapp">
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CSCB07ProjectPatientAppointmentApp">
+        <activity
+            android:name=".OneOfDocsApptInfo"
+            android:parentActivityName=".DoctorMain"></activity>
+        <activity android:name=".DisplayOneAppInfo" />
+        <activity android:name=".ThankYouForBooking" />
+        <activity android:name=".OneDocsAvailableTimes" />
+        <activity android:name=".ListFilteredDocs" /> <!-- <activity android:name=".DocListViewItems"></activity> -->
+        <activity
+            android:name=".FilterDocs"
+            android:parentActivityName=".ListDoctorsActivity" />
+        <activity
+            android:name=".ListDoctorsActivity"
+            android:parentActivityName=".PatientHomePage" />
+        <activity android:name=".PatientHomePage" />
+        <activity
+            android:name=".SignUpDoctor"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SignUpActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".BookAppointmentActivity"
+            android:parentActivityName=".PatientHomePage" />
+        <activity
+            android:name=".PatientNextAppointments"
+            android:parentActivityName=".PatientHomePage" />
+        <activity
+            android:name=".DoctorMain"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
